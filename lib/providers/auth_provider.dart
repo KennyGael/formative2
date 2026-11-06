@@ -44,6 +44,10 @@ class AuthProvider extends ChangeNotifier {
     } on FirebaseAuthException catch (e) {
       error = e.message ?? 'Authentication failed';
       return false;
+    } catch (e) {
+      // e.g. a Firestore error while saving the user document
+      error = 'Something went wrong: $e';
+      return false;
     } finally {
       loading = false;
       notifyListeners();

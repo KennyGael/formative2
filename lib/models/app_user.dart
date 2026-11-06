@@ -12,6 +12,6 @@ class AppUser {
         uid: uid,
         name: d['name'] ?? '',
         email: d['email'] ?? '',
-        role: d['role'] ?? 'student',
+        role: (d['role'] ?? 'student').toString().trim().toLowerCase(),
       );
 }
