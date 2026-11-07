@@ -107,7 +107,7 @@ class _Photo extends StatelessWidget {
         loadingBuilder: (_, child, progress) => progress == null
             ? child
             : const SizedBox(height: 220, child: Center(child: CircularProgressIndicator())),
-        errorBuilder: (_, __, ___) => const SizedBox(
+        errorBuilder: (_, _, _) => const SizedBox(
             height: 120, child: Center(child: Text('Photo could not be loaded'))),
       ),
     );

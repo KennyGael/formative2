@@ -1,1 +1,8 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"campus-incident-app-26","appId":"1:217867547405:android:4d5d83714b0c46d2247644","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"campus-incident-app-26","configurations":{"android":"1:217867547405:android:4d5d83714b0c46d2247644","ios":"1:217867547405:ios:4ec41e673eb97332247644","macos":"1:217867547405:ios:4ec41e673eb97332247644","web":"1:217867547405:web:44e928e7e556cb47247644","windows":"1:217867547405:web:9c1908501c21ee59247644"}}}}}}
+{"flutter":{"platforms":{"android":{"default":{"projectId":"campus-incident-app-26","appId":"1:217867547405:android:4d5d83714b0c46d2247644","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"campus-incident-app-26","configurations":{"android":"1:217867547405:android:4d5d83714b0c46d2247644","ios":"1:217867547405:ios:4ec41e673eb97332247644","macos":"1:217867547405:ios:4ec41e673eb97332247644","web":"1:217867547405:web:44e928e7e556cb47247644","windows":"1:217867547405:web:9c1908501c21ee59247644"}}}}},
+"storage": { "rules": "storage.rules" },
+"emulators": {
+  "storage": { "port": 9199 },
+  "ui": { "enabled": true, "port": 4000 },
+  "singleProjectMode": true
+}
+}

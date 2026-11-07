@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/auth_provider.dart';
@@ -46,12 +45,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold)),
               const SizedBox(height: 2),
               Text(user.email, style: const TextStyle(color: Colors.white70)),
-              if (kDebugMode) ...[
-                const SizedBox(height: 4),
-                // Debug only: compare this with the Document ID in Firestore > users
-                SelectableText('UID: ${user.uid}  (role: ${user.role})',
-                    style: const TextStyle(color: Colors.white60, fontSize: 10)),
-              ],
               const SizedBox(height: 12),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),

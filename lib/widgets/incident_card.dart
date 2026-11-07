@@ -33,7 +33,7 @@ class IncidentCard extends StatelessWidget {
                   ? ClipRRect(
                       borderRadius: BorderRadius.circular(14),
                       child: Image.network(incident.imageUrl!,
-                          fit: BoxFit.cover, errorBuilder: (_, __, ___) => cover),
+                          fit: BoxFit.cover, errorBuilder: (_, _, _) => cover),
                     )
                   : cover,
             ),
